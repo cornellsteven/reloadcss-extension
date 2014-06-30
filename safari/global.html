@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>ReloadCSS Global</title>
+		
+		<script type="text/javascript" charset="utf-8">
+			function performCommand(event)
+			{
+			
+				if (event.command === "reloadCSS") {
+					safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("reload", "true");
+				}
+			}
+
+			function validateCommand(event)
+			{
+			    if (event.command === "reloadCSS") {
+			        // event.target.disabled = !event.target.browserWindow.activeTab.url;
+			    }
+			}
+			
+			safari.application.addEventListener("command", performCommand, false);
+			safari.application.addEventListener("validate", validateCommand, false);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

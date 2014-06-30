@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Cornell Campbell</string>
+	<key>Builder Version</key>
+	<string>9537.76.4</string>
+	<key>CFBundleDisplayName</key>
+	<string>ReloadCSS</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.cornellcampbell.reloadcss</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>reloadCSS</string>
+				<key>Identifier</key>
+				<string>reloadCSSCM</string>
+				<key>Title</key>
+				<string>Reload CSS</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>global.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>reloadCSS</string>
+				<key>Identifier</key>
+				<string>reloadCSS</string>
+				<key>Image</key>
+				<string>Icon-16.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>Reload CSS</string>
+				<key>Palette Label</key>
+				<string>Reload CSS</string>
+				<key>Tool Tip</key>
+				<string>Reload CSS</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>ccreloadcss.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>A simple extension that allows you to refresh CSS stylesheets without reloading the page.</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://www.cornellcampbell.com/extensions/updates.plist</string>
+	<key>Website</key>
+	<string>http://cornellcampbell.com/extensions</string>
+</dict>
+</plist>
